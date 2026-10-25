@@ -1,25 +1,64 @@
 aid: butterflies-ai
+
 name: Butterflies AI
-description: 'Butterflies AI is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by coatue) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Butterflies AI is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio; backed by coatue) and added to
+  the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/butterflies-ai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- coatue
+
 common:
+- type: Hosts
+  url: hosts/butterflies-ai-hosts.yml
+- type: Vendors
+  url: vendors/butterflies-ai-vendors.yml
+- type: DomainSecurity
+  url: security/butterflies-ai-domain-security.yml
 - type: Website
   url: https://www.butterflies.ai/landing
+
+apis:
+- name: Butterflies AI API
+  description: Butterflies AI API (no public documentation found; site requires payment).
+  humanURL: https://www.butterflies.ai/landing
+  aid: butterflies-ai:butterflies-ai-api
+
+x-backed-by:
+- coatue
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Landing page returns 402 Payment required, no API documentation accessible.
+  evidence:
+  - url: https://www.butterflies.ai/landing
+    status: 402
+  checked: '2026-10-25'
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

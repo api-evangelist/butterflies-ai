@@ -1,0 +1,19 @@
+generated: '2026-10-25'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.butterflies.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan  5 23:52:14 2027 GMT
+  hsts: null
+domains:
+- domain: butterflies.ai
+  dnssec: false
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  - 0 issue "sectigo.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: none

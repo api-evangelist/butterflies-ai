@@ -1,0 +1,20 @@
+generated: '2026-10-25'
+method: none
+source:
+- https://zapier.com/apps/butterflies-ai/integrations
+- https://zapier.com/apps/butterflies/integrations
+- https://n8n.io/integrations/butterflies-ai/
+- https://n8n.io/integrations/butterflies/
+- https://composio.dev/toolkits/butterflies-ai
+- https://monid.ai/tools/butterflies-ai
+checked:
+- https://composio.dev/toolkits/butterflies-ai
+- https://monid.ai/tools/butterflies-ai
+- https://n8n.io/integrations/butterflies-ai/
+- https://n8n.io/integrations/butterflies/
+- https://zapier.com/apps/butterflies-ai/integrations
+- https://zapier.com/apps/butterflies/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
